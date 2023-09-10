@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Volonteer Form</title>
+
+    </head>
+
+    <body>
+        <h1>Volonteer Form</h1>
+        <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+            
+            <fieldset>
+                <h2>My Info</h2>
+
+                <div>
+                    <div><label>First Name:<input type="text" name="first_name_field" placeholder="First Name"></label></div>
+                    <div><label>Last Name:<input type="text" name="last_name_field" placeholder="Last Name"></label></div>
+                    <div><label>Phone Number:<input type="tel" name="phone_field" placeholder="Phone Number"></label></div>
+                    <div><label>Email Adress:<input type="text" name="email_field" placeholder="Email Adress"></label></div>
+                </div>
+
+                <div>
+                    <h3>Gender:</h3>
+                    <label>Male:<input type="radio" name="gender_field" value="male" checked></label>
+                    <label>Female:<input type="radio" name="gender_field" value="female" checked></label>
+                </div>
+
+                <div>
+                    <h3>Age:</h3>
+                    <select name="age_field">
+
+                        <option value="under 18">under 18</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25-34">25-34</option>
+                        <option value="35-44">35-44</option>
+                        <option value="45-54">45-54</option>
+                        <option value="55-64">55-64</option>
+                        <option value="65 and over">65 and over</option>
+
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <h2>My availability</h2>
+
+                <div>
+                    <h3>Days available:</h3>
+                    <div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Monday">Monday</label></div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label></div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Wednesday"></label>Wednesday</div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label></div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Friday"></label>Friday</div>
+                        <div><label><input type="checkbox" name="available_field[]" value="Saturday"></label>Saturday</div>
+                    </div>
+                </div>
+
+               
+                <div>
+                    <h3>Any Comments?</h3>
+                    <textarea name="comments_field" placeholder="Comments"></textarea>
+                </div>
+
+            </fieldset>
+            <div>
+                <input type="hidden" name="hidden_field" value="aovcharenko">
+            </div>
+
+            <div>
+                <input type="submit" value="Send me!">
+            </div>
+
+        </form>
+
+    </body>
+
+
+</html>
